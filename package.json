@@ -1,0 +1,3 @@
+{
+  "name":"neoncraft-launcher","version":"1.0.0","description":"NeonCraft Windows Minecraft optimization launcher","main":"src/main.js","scripts":{"start":"electron .","dist":"electron-builder --win nsis"},"devDependencies":{"electron":"^38.0.0","electron-builder":"^26.0.0"},"build":{"appId":"com.neoncraft.launcher","productName":"NeonCraft Launcher","files":["src/**/*","package.json"],"win":{"target":["nsis"]}}
+}
