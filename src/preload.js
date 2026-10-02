@@ -1,0 +1,1 @@
+const {contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('api',{install:()=>ipcRenderer.invoke('install'),openMinecraft:()=>ipcRenderer.invoke('open-minecraft'),findMinecraft:()=>ipcRenderer.invoke('find-minecraft'),openFolder:p=>ipcRenderer.invoke('open-folder',p)});
